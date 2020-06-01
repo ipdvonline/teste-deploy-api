@@ -15,7 +15,7 @@ module.exports = {
       repo : 'https://github.com/ipdvonline/teste-deploy-api.git',
       path : '/var/www/teste_deploy',
       'pre-deploy-local': '',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production',
+      'post-deploy' : 'yarn install && pm2 reload ecosystem.config.js --env production',
       'pre-setup': ''
     }
   }
