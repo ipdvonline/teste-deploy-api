@@ -10,7 +10,7 @@ module.exports = {
   deploy : {
     production : {
       user : 'ubuntu',
-      host : '52.45.30.30',
+      host : ["52.45.30.30"],
       ref  : 'origin/master',
       repo : 'https://github.com/ipdvonline/teste-deploy-api.git',
       path : '/var/www',
