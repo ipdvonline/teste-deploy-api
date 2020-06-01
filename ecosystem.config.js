@@ -9,11 +9,11 @@ module.exports = {
 
   deploy : {
     production : {
-      user : 'SSH_USERNAME',
-      host : 'SSH_HOSTMACHINE',
+      user : 'ubuntu',
+      host : '52.45.30.30',
       ref  : 'origin/master',
-      repo : 'GIT_REPOSITORY',
-      path : 'DESTINATION_PATH',
+      repo : 'https://github.com/ipdvonline/teste-deploy-api.git',
+      path : '/var/www',
       'pre-deploy-local': '',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production',
       'pre-setup': ''
